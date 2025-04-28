@@ -1,1 +1,7 @@
+Kubernetes architecture
+Deployment vs stateful set
+Explain Kubernates Deployments types
+Explain Kubernates Networking
+Load Balancers
+You want a attach a volume to a POD so that if POD delete or terminated then volume also deleted
 
