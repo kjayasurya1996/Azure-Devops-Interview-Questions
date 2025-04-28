@@ -7,6 +7,9 @@ How to integrate azure key vault in jenkins / azure pipeline
 PAT
     
 task
+
 Variables
+
 Service connections
+
 
