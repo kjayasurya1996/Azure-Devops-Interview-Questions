@@ -1,1 +1,4 @@
-
+Differnce between push and push based architecure
+In kubernates there are more than 70 clusters few are linux,redhat,ubuntu,centos machines update only redhat machines java 1.8 to new version write a ansibel yaml file
+variables in anisble
+static ivnetatry and dynamic ivnetatry
