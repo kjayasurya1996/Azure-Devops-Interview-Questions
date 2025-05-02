@@ -1,0 +1,68 @@
+1)What is Docker and why its used?
+2)Docker image
+3)Docker container
+4)Docker networking
+5)DockerFile
+6)Docker compose
+7)Docker volume
+8)Docker commands
+9)How do you persist data in docker container?
+  - use volumes or bind mounts
+  - docker run -v mydata:/app/data myapp  #myapp =container name
+10)how do you troubleshoot a container that fails to start?
+  - docker logs <conatainer-id>
+  - docker insepect <conatiner-id>
+
+  check for
+  -entry points
+  -missing depedenices
+  -incorrect enviornment variables
+
+11)How do you reduce the size of the docker image?
+
+use Alpine base image
+multi-stage builds
+clean caches and temp files
+
+FROM golang:1.20 as builder
+WORKDIR /app
+COPY . .
+RUN go build -o myapp
+
+FROM alpine
+COPY --form=builder /app/myapp /myapp
+ENTRYPOINT["/myapp"]
+
+12)How do you pass secrest securly into docker container?
+use valut or --env-file,docker secrets
+
+13)How do you expose multiple ports in a docker container?
+
+docker run -p 8080:8080 -p 9000:9000 myapp
+
+14)How do you debug network issues between two containers?
+
+  - Ensure they are in the same Docker network
+  - Use docker network inspect
+  - use ping curl inside containers
+
+  docker exec -it container ping conatiner2
+
+14)How do you handle docker container crashes automatically?
+ - use restart polices
+
+ docker run --restart=always myapp
+
+15)How do you check which container is using high resouces?
+
+docker stats
+
+16)How do you share data between two containers?
+
+  - use a named volume
+
+  docker volume create shared-vol
+  docker run -v shared-vol:/data container1
+  docker run -v shared-vol:/data container2
+
+
