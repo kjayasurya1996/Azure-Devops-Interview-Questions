@@ -11,4 +11,22 @@ Monitoring tool for pods
 HPA configuration
 How do you troubleshoot while daemn set fails
 
+How do you scale an apllication in kubernates?
+   - kubectl scale deplyment myapp --replicas=5
+  - use HPA 
+  kubectl autoscale deplyment myapp --cpu-percent=80 --min=2 --max=10
+
+what the use of configmaps 
+  - configMaps store configuration data seperatly from application code
+  - kubectl create configmap app-config --from-literal=env=prod
+
+  - envFrom:
+      - configMapRef:
+          name : app-config
+
+how do you persist data in kubenated pods?
+  - use persistant volumes and persistent volume claims(PVC)
+
+  - vol
+
 
