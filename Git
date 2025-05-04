@@ -1,11 +1,21 @@
 What is Git
-  Git is a distributed version control system
-  Track changes in source code during software development
-  it was designed for coordinating work among programming but can be used to track changes in any set of files
-  gits key features include its distrubuted nature branching model statging area and speed
+  -Git is a distributed version control system
+  -Track changes in source code during software development
+  -it was designed for coordinating work among programming but can be used to track changes in any set of files
+  -gits key features include its distrubuted nature branching model statging area and speed
+Expalin git init
+  - Intialize a new reposistory in the current directory
+git clone
+  - copies a remote reposistory to the local machine
+git status
+  - Display the state of the working directory and staging area
+git add
+  - add changes to the statgin area
+git commit 
+  - reocrds changes to the reposistory
 Expalin Differnce between Git Merge and Rebase
 Expalin Git Branch stratagey
 Differnce Git and GitHub
-  Git is a version control system that allows developers to track changes in thier code
-  Github is a cloud based hosting service that lets you manage git repos 
-  Git is a tool where github is a service that hosts git repos and provides additional collabrartaion features like pull request issues and project managment tools
+  -Git is a version control system that allows developers to track changes in thier code
+  -Github is a cloud based hosting service that lets you manage git repos 
+  -Git is a tool where github is a service that hosts git repos and provides additional collabrartaion features like pull request issues and project managment tools
