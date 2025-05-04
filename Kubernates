@@ -1,3 +1,73 @@
+what is kubernates
+   - kubernates is an open source container orechestration platform that automates the deployment
+   - scaling and management of containerized applications
+Benfits of kubernates?
+   - Simplified application managemnt
+   - Improved caling and avaliability
+   - Easy deplyment and rollback
+   - Improved resouce utilization
+   - Increased portability and flexbility
+Define container in kubernates?
+   - container is lightweight standlone executable software package that includes everything needed to run an application including code runtime system tools librarues and settings
+concept of kubernates cluster?
+   - kubernates cluster is a set of nodes that run conatinerd applications, managed by the kubernates control plane
+node in kuebrnates?
+   - A node is a worker machine in kubernates that runs container applications
+what are the key components of kubernates?
+   - Master nodes, worker nodes, pods, services, deployments, replicaaets, statefulsets
+what is POD in kubernates?
+   - POD is smallest deployable unit in kubenates
+   - It repersents a group of one or more containers that are scheduled together and share the same network namespaces,storage and IP adress
+What is deployment in kubernates?
+   - Deplyment manages a set of replicated pods and provides declartive updates to ensure the desired state of the applications
+   - It supports rolling updates and rollbacks
+How kubernates handle conatiner nerworking?
+   - Kubernates assign a unique IP address to each POD and allows communications between pods using POD IP address 
+   - It setup a virtual network thrugh plugins like CNI to enable network connectivity
+What is service in kubernates?
+   - service in kubernates is an abstraction that defines a stable network endpoint to access one or more pods
+   - It provides load balancing and service discovery for PODS
+What is Replicasets?
+   - Replicset is responsible for ensuring a specided number of POD replicas are running at all time
+   - It automatically scales the number of replicas based for PODS
+   - kubectl scale deplyment myapp --replicas=5
+   - use HPA 
+   - kubectl autoscale deplyment myapp --cpu-percent=80 --min=2 --max=10
+Stateful sets in kubernates?
+   - used for managing stateful applications
+   - provides guarantees about the oreding and uniqyunees of pods
+Daemonset?
+   - Ensures that a specifed pod runs on each node in the cluster
+   - it is commnly used for cluster level opeartions such as log collection or montoring agents
+Kubernates volumes
+   - EmptyDIR, Hostoat, PV, PVC
+PVC in kubernates?
+   - PVC is a request for a specfic amount of storage resouces from a PV 
+   - It allows pods to use persistent storage in a decpupled manner
+Expose a servce ouside the kuernates cluster
+   - nodeport
+   - loadbalancer
+   - ingress
+Ingress in kunernates?
+   -An Ingress is an API object used to manage external access to services within a cluster
+   - It provides a way to configure rules for routing HTTP and HTTPS traffic to differnt services
+How do you perform rolling updates in Kubernetes?
+   - Rolling updates can be performed by updating the container image or configuration of a Deployment
+   - Kubernetes will gradually replace the old Pods with the new ones, minimizing downtime.
+What is the purpose of a readiness probe?
+   - A readiness probe is used to determine if a Pod is ready to receive tra c.
+   - Kubernetes uses this probe to determine when a Pod is fully operational and should be included in load balancing.
+What is the purpose of the Kubernetes API server
+   - The API server is the front-end interface for the Kubernetes control plane that exposes the Kubernetes API
+How do you secure access to the Kubernetes API server
+   - Access to the Kubernetes API server can be secured using authentication mechanisms like certificates, tokens, or external authentication providers. 
+   - RoleBased Access Control (RBAC) can also be implemented to manage user access.
+How does Kubernetes handle rolling back a failed deployment?
+   - Kubernetes allows you to roll back to a previous version of a Deployment by specifying the desired revision or using the kubectl rollout undo command. 
+   - It reverts the Deployment to the previous state.
+What is the purpose of a pod disruption budget (PDB)?
+   - A Pod Disruption Budget defines the minimum number of Pods that must be available during a disruption caused by node maintenance or other events. 
+   - It helps maintain application availability
 Kubernetes architecture
 Deployment vs stateful set
 Explain Kubernates Deployments types
@@ -11,10 +81,6 @@ Monitoring tool for pods
 HPA configuration
 How do you troubleshoot while daemn set fails
 
-How do you scale an apllication in kubernates?
-   - kubectl scale deplyment myapp --replicas=5
-  - use HPA 
-  kubectl autoscale deplyment myapp --cpu-percent=80 --min=2 --max=10
 
 what the use of configmaps 
   - configMaps store configuration data seperatly from application code
