@@ -1,0 +1,39 @@
+How would you structure your Terraform modules for this requirement? What best practices would you follow?
+How do you manage Terraform state in a team environment, especially when working with GCP?
+You get an error Error 403: Insufficient permissions while applying a Terraform plan. How do you debug and fix it?
+You have a monorepo with multiple microservices. The team wants to trigger CI/CD pipelines only for the changed services.Q: How would you implement this in Jenkins?
+How can you secure credentials (e.g., GCP service account keys or DockerHub secrets) in Jenkins pipelines?
+How do you integrate Terraform deployments into a Jenkins pipeline safely?
+Your application is crashing in a GKE pod due to an OOMKilled error.Q: How would you investigate and fix this?
+Explain the difference between Deployment, StatefulSet, and DaemonSet. When would you use each?
+How do you build and push Docker images securely and efficiently to Google Container Registry (GCR)?
+You need to rotate Kubernetes secrets across all namespaces in a live environment.Q: What’s your strategy to do it with minimal downtime?
+How would you monitor pod-level CPU/memory usage in GKE using Datadog?
+An alert triggers in Datadog showing high error rates in a service, but logs in Splunk don’t show much detail.Q: What steps would you take to investigate and correlate logs and metrics?
+How would you design an alerting strategy to avoid alert fatigue while still ensuring reliability?
+How do you ensure rollback safety in a CI/CD deployment pipeline?
+A developer pushed a bad config that caused downtime. You’ve been asked to make the CI/CD pipeline more robust ? What improvements or validations would you add?
+How would you enforce code quality, security scanning, and IaC linting in your DevOps lifecycle?
+ How do you handle postmortems for incidents? What metrics or processes do you document?
+Your team is under pressure to release faster, but you're concerned about reliability.?How would you balance velocity and stability?
+What SLOs/SLIs would you define for a web API service? How do they guide your operational decisions?
+Describe a time you resolved a production issue under pressure. What steps did you take?
+
+What are SLIs, SLOs, and SLAs? How do they differ? Tests understanding of service quality metrics. 
+How do you define and implement error budgets? Checks balance between reliability and feature velocity.
+Describe your approach to handling on-call and incident response. Assesses real-world crisis management experience.
+How do you conduct post-incident reviews or postmortems?Evaluates learning mindset and blameless culture.
+What is your strategy for automating toil?Looks for focus on reducing repetitive manual work.
+How would you monitor a distributed system effectively?Focuses on observability tools, metrics, logs, traces.
+How do you handle alert fatigue?Tests alerting practices, tuning, and escalation.
+What tools do you use for monitoring and logging? (e.g., Datadog, Splunk, Prometheus, Grafana) Seeks experience in observability stack.
+What is a runbook? How do you maintain them?Assesses operational readiness and documentation habits.
+How do you ensure high availability in cloud-native infrastructure (e.g., Kubernetes)?Tests HA design, redundancy, failover strategies.
+How do you conduct capacity planning for a growing service?
+How do you implement graceful degradation in an application?
+What’s your approach to chaos engineering or failure injection testing?
+How do you handle configuration drift in production systems?
+How do you test and validate rollback procedures?
+
+
+
